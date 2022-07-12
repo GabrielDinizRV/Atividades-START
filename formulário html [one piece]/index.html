@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário One piece</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">Ficha de inscrição</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="bloco">
+            <div class="caixa">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+            </div>
+
+            <div class="caixa">
+                <label for="sobrenome"><strong>sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome" required>
+            </div>
+            <div class="caixa">
+                <label for="recompensa"><strong>Recompensa</strong></label>
+                <input type="number" name="recompensa" id="recompensa" placeholder="Digite a recompensa (opcional)">
+            </div>
+        </fieldset>
+            <div class="caixa">
+                <label><strong>Qual bando Younkou vc gostaria de entrar?</strong></label>
+                <label>
+                    <input type="radio" name="bandoYonkou" value="Kaidou" checked>Kaidou
+                </label>
+                <label>
+                    <input type="radio" name="bandoYonkou" value="Bigmom"></imput>Big mom
+                </label>
+                <label>
+                    <input type="radio" name="bandoYonkou" value="Shanks">Shanks
+                </label>
+                <label>
+                    <input type="radio" name="bandoYonkou" value="Barbanegra">Barba negra
+                </label>
+            </div>
+
+            <div class="caixa">
+                <label for="Funçõesdisponíveis"><strong>Funções disponíveis</strong></label>
+                <select id="Funçõesdisponíveis" required>
+                    <option selected disable value="">selecione uma opção</option>
+                    <option>8ºComandante</option>
+                    <option>9ºComandante</option>
+                    <option>10ºComandante</option>
+                    <option>Carpinteiro(a)</option>
+                    <option>Cartógrafo(a)</option>
+                    <option>Cozinheiro(a)</option>
+                    <option>Espadachin</option>
+                    <option>Médico(a)</option>
+                    <option>Arqueólogo(a)</option>
+                    <option>Atirador(a)</option>
+                    <option>Timoneiro(a)</option>
+                    <option>Navegador(a)</option>
+                    <option>Imediato</option>
+                    <option>Mestre(a) do Navio</option>
+                    <option>Rapaz da Pólvora</option>
+                    <option>Criado-de-Bordo</option>
+                </select>
+            </div>
+
+        <fieldset class="bloco">
+            <div id="itens">
+                <label><strong>Quais desses itens/habilidades você tem conhecimento?</strong></label>
+                <br><br>
+                <input type="checkbox" name="item1" id="item1" value="akumanomi">
+                <label for="item1">Akuma no mi</label>
+                <input type="checkbox" name="item2" id="item2" value="KenbunshokuHaki">
+                <label for="item2">Kenbunshoku Haki</label>
+                <input type="checkbox" name="item3" id="item3" value="BusoshokuHaki">
+                <label for="item3">Busoshoku Haki</label>
+                <input type="checkbox" name="item4" id="item4" value="HaoshokuHaki">
+                <label for="item4">Haoshoku Haki</label>
+                <input type="checkbox" name="item5" id="item5" value="12Meitous">
+                <label for="item5">12 Meitous</label>
+                <input type="checkbox" name="item6" id="item6" value="Poneglyph">
+                <label for="item6">Poneglyph</label>
+                <input type="checkbox" name="item7" id="item7" value="RoadPoneglyph">
+                <label for="item7">Road Poneglyph</label>
+                <input type="checkbox" name="item8" id="item8" value="Séculoperdido">
+                <label for="item8">Século perdido</label>
+                <input type="checkbox" name="item8" id="item9" value="Armasancestrais">
+                <label for="item9">Armas ancestrais</label>
+            </div>
+        </fieldset>
+        <div class="caixa">
+            <br>
+            <label><strong>Conte sobre a sua jornada até aqui.</strong></label>
+            <textarea row="6" style="width:26em" id="jornada" name="jornada"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
